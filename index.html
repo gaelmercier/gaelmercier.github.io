@@ -1,1 +1,231 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Gaël Mercier's resume</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<style>
+  html {
+    margin: 1rem;
+  }
+
+  body {
+    margin-bottom: 3rem;
+  }
+
+  * {
+    font-family: Arial, sans-serif;
+    color: #111111;
+  }
+
+  h1,
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  }
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  h2 span {
+    background: #e66a5e;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li::before {
+    color: #e66a5e;
+    content: "■";
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+  }
+
+  button {
+    border: 1px solid #e66a5e;
+    color: #e66a5e;
+    border-radius: 15px;
+    font-size: 1em;
+    background: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    cursor: pointer;
+  }
+
+  a {
+    color: #e66a5e;
+  }
+
+  #fr {
+    display: none;
+  }
+</style>
+
+<body>
+
+  <h1>Gaël Mercier</h1>
+
+  <button onclick="showEn()">Read in English</button> ou / or <button onclick="showFr()">Lire ce texte en
+    français</button>
+
+  <section id="en">
+
+    <h2><span>GOAL</span></h2>
+
+    I have been developing software (web or mobile apps) for more than 10 years. I enjoy writing code and learning, as a
+    member of a team solving business needs. I bring my experience and motivation to deliver simple and user-centric
+    solutions.
+
+    <h2><span>WORK EXPERIENCE</span></h2>
+
+    <h3>Apside (IT services, current position)</h3>
+
+    I work for the Harmonie Mutuelle Information System, a french private health insurance company. I used to work on
+    the product information application maintenance, I now am focused on developing new applications in a 5-people team,
+    in relation with the European law <a
+      href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016L0097">Insurance Distribution
+      Directive</a>. We are also rewriting some parts of the customer relationship management dedicated to the
+    subscription process.
+
+    <h3>QALYO (Startup, 2015 to 2018)</h3>
+
+    QALYO created a mobile app to assist people in healthcare prevention and follow-up. I contributed to develop and
+    deploy the app on iOS and Android, and the backend system. I was also implied in designing features and organizing
+    tasks with the doctor founder of the company.
+
+    <h3>Neurésys (IT services, 2014 to 2015)</h3>
+    <ul>
+      <li>For PMU: I fixed bugs and developed evolutions on the website <a href="https://www.pmu.fr/">www.pmu.fr</a>
+        backend.</li>
+      <li>For CNP Assurances: I maintained several intranet web apps.</li>
+    </ul>
+
+    <h3>Multimedia Business Services (2011 to 2013)</h3>
+
+    I joined a team working on a contactless mobile deployment platform, in transports and banking fields. We wrote unit
+    and functional tests.
+
+    <h2><span>TECHNICAL KNOWLEDGE</span></h2>
+
+    I am autonomous with&nbsp;:
+    <ul>
+      <li>Backend/API Design and implementation (Play framework, Spring Boot)</li>
+      <li>Databases (PostgreSQL)</li>
+      <li>Native mobile development (iOS, Android)</li>
+      <li>A terminal (Linux, MacOS, Windows)</li>
+      <li>IDEs (IntelliJ IDEA, XCode)</li>
+    </ul>
+
+    <br>
+    As part of a team, I can particpate in &nbsp;:
+    <ul>
+      <li>Web development (Angular, JS, HTML, CSS)</li>
+      <li>IaaS / PaaS administration (AWS)</li>
+      <li>Continuous integration configuration</li>
+      <li>Build configuration (sbt, Maven, npm)</li>
+      <li>Writing tests : "Test first", TDD, BDD</li>
+    </ul>
+
+    <h2><span>GET IN TOUCH</span></h2>
+    <p>You can write to me with <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
+
+
+  </section>
+
+
+  <section id="fr" lang="fr">
+    <h2><span>OBJECTIF</span></h2>
+
+    Je développe des applications depuis plus de dix ans. J’aime développer, apprendre et contribuer à l’amélioration
+    dans
+    une équipe au service d’un besoin métier. J’apporte mon expérience et ma motivation pour livrer régulièrement des
+    solutions simples, maintenables et adaptées aux utilisateurs.
+
+    <h2><span>EXPÉRIENCE PROFESSIONNELLE</span></h2>
+
+    <h3>Apside (ESN, en poste depuis mars 2018)</h3>
+
+    Je suis en mission dans le GIE SIHM d’Harmonie Mutuelle. Je suis intervenu sur la maintenance d’applications autour
+    du
+    référentiel produits.
+    Je participe actuellement au développement de nouvelles applications, en relation avec la réglementation européenne
+    nommée Directive sur la Distribution d’Assurances. et à la réécriture de l’application de Gestion de la relation
+    client (GRC) sur la partie souscription.
+
+    <h3>QALYO (Startup, 2015 à 2018)</h3>
+
+    QALYO est une société créée en 2014 dans le domaine de la prévention et du suivi de la santé. J’ai participé au
+    développement et au déploiement d’une application mobile sur iOS et Android et du backend associé. Je suis intervenu
+    dans la conception des fonctionnalités et l’organisation des tâches avec le fondateur de l’entreprise.
+
+    <h3>Neurésys (ESN, 2014 à 2015)</h3>
+    <ul>
+      <li>Pour le client PMU : j’ai collaboré à la maintenance corrective et évolutive du backend du site <a
+          href="https://www.pmu.fr/">www.pmu.fr</a> et
+        j’ai participé au développement de nouvelles versions du site.</li>
+      <li>Pour le client CNP Assurances : j’ai participé au développement d’une application de suivi de dossiers avec La
+        Banque Postale. J’ai porté une application de gestion de contrats d’assurances-vie vers l’Intranet.</li>
+    </ul>
+
+    <h3>Multimedia Business Services (Filiale d’Orange, 2011 à 2013)</h3>
+
+    J’ai intégré une équipe qui créait une plateforme de déploiement d'applications mobiles sans contact dans les
+    secteurs
+    bancaire et du transport. Nos développements étaient couverts par des tests unitaires et fonctionnels.
+
+    <h2><span>CONNAISSANCES TECHNIQUES</span></h2>
+
+    Je suis autonome avec&nbsp;:
+    <ul>
+      <li>la conception et réalisation d'API et backend (Play framework, Spring Boot)</li>
+      <li>des bases de données (PostgreSQL)</li>
+      <li>le développement mobile natif (iOS, Android)</li>
+      <li>un terminal (Linux, MacOS, Windows)</li>
+      <li>différents IDE (IntelliJ IDEA, XCode)</li>
+    </ul>
+
+    <br>
+    Au sein d’une équipe, je peux participer dans&nbsp;:
+    <ul>
+      <li>le développement web (Angular, JS, HTML, CSS)</li>
+      <li>l'administration d'une IaaS / PaaS (AWS)</li>
+      <li>la configuration d'une intégration continue</li>
+      <li>la configuration du build (sbt, Maven, npm)</li>
+      <li>l’écriture de tests, en "Test first", TDD, BDD</li>
+    </ul>
+
+    <h2><span>CONTACT</span></h2>
+    <p>Vous pouvez me joindre sur <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
+
+
+  </section>
+
+
+</body>
+
+<script>
+  function showFr() {
+    document.querySelector("#fr").style.display = "block";
+    document.querySelector("#en").style.display = "none";
+
+  }
+  function showEn() {
+    document.querySelector("#en").style.display = "block";
+    document.querySelector("#fr").style.display = "none";
+  }
+</script>
+
+</html>
