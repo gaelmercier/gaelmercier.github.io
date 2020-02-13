@@ -26,6 +26,14 @@
         margin-left: 20%;
       }
     }
+    
+    @media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
 
     body {
       margin-bottom: 3rem;
@@ -98,13 +106,15 @@
 <body>
 
   <h1>Gaël Mercier</h1>
-
+  
+  <div class="no-print">
   <button onclick="showFr()">Lire ce texte en français</button> ou / or <button onclick="showEn()">Read in
     English</button>
-
+  </div>
+  
   <section id="en" lang="en">
 
-    <div id="location">
+    <div id="location" class="no-print">
       I currently live and work in France.
     </div>
 
