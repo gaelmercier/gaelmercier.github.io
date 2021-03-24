@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -26,14 +26,6 @@
         margin-left: 20%;
       }
     }
-    
-    @media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
-}
 
     body {
       margin-bottom: 3rem;
@@ -76,19 +68,6 @@
       margin-left: -1.5em;
     }
 
-    button {
-      border: 1px solid #e66a5e;
-      color: #e66a5e;
-      border-radius: 15px;
-      font-size: 1em;
-      background: #fefefe;
-      padding: 5px;
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-
     a {
       color: #e66a5e;
     }
@@ -103,32 +82,28 @@
   </style>
 </head>
 
-<body>
+<body onload="initLang()">
 
   <h1>Gaël Mercier</h1>
-  
-  <div class="no-print">
-  <button onclick="showFr()">Lire ce texte en français</button> ou / or <button onclick="showEn()">Read in
-    English</button>
-  </div>
-  
+
   <section id="en" lang="en">
 
-    <div id="location" class="no-print">
+    <div id="location">
       I currently live and work in France.
     </div>
 
     <h2><span>GOAL</span></h2>
 
-    <p>I have been developing software (web or mobile apps) for more than 10 years. I enjoy writing code and learning,
+    <p>I have been developing software (CLI, web or mobile apps) for more than 10 years. I enjoy writing code and
+      learning,
       as a member of a team solving business needs. I bring my experience and motivation to deliver simple and
       user-centric solutions.</p>
 
     <h2><span>LATEST WORK EXPERIENCE</span></h2>
 
-    <h3>CICOA (a french Health Insurance IT center. Current position)</h3>
+    <h3>CICOA (National Health Insurance IT center. Current position)</h3>
 
-    <p>I contribute to the various software project developments on most of their steps.</p>
+    <p>I contribute to the various software projects.</p>
 
     <h3>Apside (IT services, 2018 to 2019)</h3>
 
@@ -137,7 +112,8 @@
     <p>I was focused on developing new applications in a 5-people team, in relation with the European law
       <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016L0097">Insurance Distribution
         Directive</a>. We were also rewriting some parts of the customer relationship management dedicated to the
-      subscription process.</p>
+      subscription process.
+    </p>
 
     <h3>QALYO (Startup, 2015 to 2018)</h3>
 
@@ -154,7 +130,11 @@
       <li>For CNP Assurances: I maintained several intranet web apps.</li>
     </ul>
 
-    
+    <h3>Multimedia Business Services (2011 to 2013)</h3>
+
+    I joined a team working on a contactless mobile deployment platform, in public transport and payment sectors (e.g.
+    Orange UK and Barclays). We wrote unit
+    and functional tests.
 
     <h2><span>TECHNICAL KNOWLEDGE</span></h2>
 
@@ -195,77 +175,91 @@
       une équipe au service d’un besoin métier. J’apporte mon expérience et ma motivation pour livrer régulièrement
       des solutions simples, maintenables et adaptées aux utilisateurs.
 
-      <h2><span>EXPÉRIENCE RÉCENTE</span></h2>
+    <h2><span>EXPÉRIENCE RÉCENTE</span></h2>
 
-      <h3>CICOA (Centre Informatique Centre Ouest Atlantique de l'Assurance Maladie. En poste depuis janvier 2020)</h3>
+    <h3>CICOA (Centre Informatique Centre Ouest Atlantique de l'Assurance Maladie. En poste depuis janvier 2020)</h3>
 
-      <p>Je participe aux différentes phases des activités de développement logiciel de ce centre informatique.</p>
+    <p>Je participe aux différentes phases des activités de développement logiciel pour la direction nationale (CNAM).</p>
 
-      <h3>Apside (ESN, 2018 à 2019)</h3>
+    <h3>Apside (ESN, 2018 à 2019)</h3>
 
-      <p>J'ai été en mission dans le GIE SIHM d’Harmonie Mutuelle.</p>
+    <p>J'ai été en mission dans le GIE SIHM d’Harmonie Mutuelle.</p>
 
-      <p>Je suis intervenu sur la maintenance d’applications autour du référentiel produits.</p>
+    <p>Je suis intervenu sur la maintenance d’applications autour du référentiel produits.</p>
 
-      <p>J'ai participé au développement de nouvelles applications. Elles sont en relation avec la
-        réglementation européenne Directive sur la Distribution d’Assurances. Je suis intervenu aussi sur la réécriture
-        de
-        l’application de Gestion de la relation client (GRC) sur la partie souscription.</p>
+    <p>J'ai participé au développement de nouvelles applications. Elles sont en relation avec la
+      réglementation européenne Directive sur la Distribution d’Assurances. Je suis intervenu aussi sur la réécriture
+      de
+      l’application de Gestion de la relation client (GRC) sur la partie souscription.</p>
 
-      <h3>QALYO (Startup, 2015 à 2018)</h3>
+    <h3>QALYO (Startup, 2015 à 2018)</h3>
 
-      <p>QALYO est une société créée en 2014 dans le domaine de la prévention et du suivi de la santé.
-      </p>
+    <p>QALYO est une société créée en 2014 dans le domaine de la prévention et du suivi de la santé.
+    </p>
 
-      <p>
-        J’ai participé au développement et au déploiement d’une application mobile sur <a href="https://apps.apple.com/fr/app/qalyo/id978138794">iOS</a> 
-        et <a href="https://play.google.com/store/apps/details?id=com.qalyo.android">Android</a> et du backend associé. Je suis
-        intervenu dans la conception des fonctionnalités et l’organisation des tâches avec le fondateur de l’entreprise.
-      </p>
+    <p>
+      J’ai participé au développement et au déploiement d’une application mobile sur iOS et Android et du backend
+      associé. Je suis
+      intervenu dans la conception des fonctionnalités et l’organisation des tâches avec le fondateur de l’entreprise.
+    </p>
 
-      <h3>Neurésys (ESN, 2014 à 2015)</h3>
-      <ul>
-        <li>Pour le client PMU : maintenance corrective et aux évolutions du backend de <a
-            href="https://www.pmu.fr/">www.pmu.fr</a>.</li>
-        <li>Pour le client CNP Assurances : développement d’une application de suivi de dossiers avec La Banque Postale.
-          Portage d'une application de gestion de contrats d’assurances-vie vers l’Intranet.</li>
-      </ul>
+    <h3>Neurésys (ESN, 2014 à 2015)</h3>
+    <ul>
+      <li>Pour le client PMU : maintenance corrective et aux évolutions du backend de <a
+          href="https://www.pmu.fr/">www.pmu.fr</a>.</li>
+      <li>Pour le client CNP Assurances : développement d’une application de suivi de dossiers avec La Banque Postale.
+        Portage d'une application de gestion de contrats d’assurances-vie vers l’Intranet.</li>
+    </ul>
+
+    <h3>Multimedia Business Services (Filiale d’Orange, 2011 à 2013)</h3>
+
+    J’ai intégré une équipe qui créait une plateforme de déploiement d'applications mobiles sans contact dans les
+    secteurs bancaire et du transport. Nos développements étaient couverts par des tests unitaires et fonctionnels.
+
+    <h2><span>CONNAISSANCES TECHNIQUES</span></h2>
+
+    <p>Je suis titulaire d'un Master en Informatique de l'IUP de Brest, obtenu en 2007.</p>
+
+    Je suis autonome avec&nbsp;:
+    <ul>
+      <li>la conception et réalisation d'API et backend (Play framework, Spring Boot)</li>
+      <li>des bases de données (PostgreSQL)</li>
+      <li>le développement mobile natif (iOS, Android)</li>
+      <li>un terminal (Linux, MacOS, Windows)</li>
+      <li>différents IDE (Suite Jetbrains, XCode)</li>
+    </ul>
 
 
-      <h2><span>CONNAISSANCES TECHNIQUES</span></h2>
+    Au sein d’une équipe, je peux participer dans&nbsp;:
+    <ul>
+      <li>le développement web (Angular, JS, HTML, CSS)</li>
+      <li>l'administration d'une IaaS / PaaS (AWS)</li>
+      <li>la configuration d'une intégration continue</li>
+      <li>la configuration du build (sbt, Maven, npm)</li>
+      <li>l’écriture de tests, en "Test first", TDD, BDD</li>
+    </ul>
 
-      <p>Je suis titulaire d'un Master en Informatique de l'IUP de Brest, obtenu en 2007.</p>
-
-      Je suis autonome avec&nbsp;:
-      <ul>
-        <li>la conception et réalisation d'API et backend (Play framework, Spring Boot)</li>
-        <li>des bases de données (PostgreSQL)</li>
-        <li>le développement mobile natif (iOS, Android)</li>
-        <li>un terminal (Linux, MacOS, Windows)</li>
-        <li>différents IDE (Suite Jetbrains, XCode)</li>
-      </ul>
-
-
-      Au sein d’une équipe, je peux participer dans&nbsp;:
-      <ul>
-        <li>le développement web (Angular, JS, HTML, CSS)</li>
-        <li>l'administration d'une IaaS / PaaS (AWS)</li>
-        <li>la configuration d'une intégration continue</li>
-        <li>la configuration du build (sbt, Maven, npm)</li>
-        <li>l’écriture de tests, en "Test first", TDD, BDD</li>
-      </ul>
-
-      <h2><span>CONTACT</span></h2>
-      <p>Vous pouvez me joindre sur <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
+    <h2><span>CONTACT</span></h2>
+    <p>Vous pouvez me joindre sur <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
 
   </section>
 
   <script>
+
+    function initLang() {
+      if (/^fr\b/.test(navigator.language)) {
+        showFr();
+      } else {
+        showEn();
+      }
+    }
+
     function showFr() {
       document.querySelector("#fr").style.display = "block";
       document.querySelector("#en").style.display = "none";
 
     }
+
     function showEn() {
       document.querySelector("#en").style.display = "block";
       document.querySelector("#fr").style.display = "none";
