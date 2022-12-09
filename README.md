@@ -1,4 +1,1 @@
-- Voici mon CV en ligne : 
-- This is my online resume : 
-
-https://gaelmercier.tech
+This is my online resume / Voici mon CV en ligne : https://gaelmercier.tech
