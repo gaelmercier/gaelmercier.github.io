@@ -80,85 +80,9 @@
   </style>
 </head>
 
-<body onload="initLang()">
+<body>
 
-  <h1>Gaël Mercier</h1>
-
-  <section id="en" lang="en">
-
-    <div id="location">
-      I currently live and work in France.
-    </div>
-
-    <h2><span>GOAL</span></h2>
-
-    <p>I have been developing software (CLI, web or mobile apps) for more than 10 years. I enjoy writing code and
-      learning,
-      as a member of a team solving business needs. I bring my experience and motivation to deliver simple and
-      user-centric solutions.</p>
-
-    <h2><span>LATEST WORK EXPERIENCE</span></h2>
-
-    <h3>CICOA (National Health Insurance IT center. Current position)</h3>
-
-    <p>I contribute to the various software projects.</p>
-
-    <h3>Apside (IT services, 2018 to 2019)</h3>
-
-    <p>I was on a mission for Harmonie Mutuelle, a french private health insurance company. </p>
-
-    <p>I was focused on developing new applications in a 5-people team, in relation with the European law
-      <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016L0097">Insurance Distribution
-        Directive</a>. We were also rewriting some parts of the customer relationship management dedicated to the
-      subscription process.
-    </p>
-
-    <h3>QALYO (Startup, 2015 to 2018)</h3>
-
-    QALYO created a mobile app to assist people in healthcare prevention and follow-up.
-
-    <p>I contributed to develop and deploy the app on iOS and Android, and the backend system.
-      I was also involved in designing features and organizing tasks with the doctor founder of the company.</p>
-
-    <h3>Neuresys (IT services, 2014 to 2015)</h3>
-    <ul>
-      <li>For PMU (betting site): I fixed bugs and developed evolutions on the website <a
-          href="https://www.pmu.fr/">www.pmu.fr</a>
-        backend.</li>
-      <li>For CNP Assurances: I maintained several intranet web apps.</li>
-    </ul>
-
-    <h2><span>TECHNICAL KNOWLEDGE</span></h2>
-
-    <p>I have a Master of Science in Computer Engineering from <a href="https://www.univ-brest.fr/GB">Université de
-        Bretagne Occidentale</a>, France (2007).</p>
-
-    I am autonomous with:
-    <ul>
-      <li>Backend/API Design and implementation (Play framework, Spring Boot)</li>
-      <li>Databases (PostgreSQL)</li>
-      <li>Native mobile development (iOS, Android)</li>
-      <li>A terminal (Linux, MacOS, Windows)</li>
-      <li>IDEs (Jetbrains suite, XCode)</li>
-    </ul>
-
-
-    As part of a team, I can help in:
-    <ul>
-      <li>Web development (Angular, JS, HTML, CSS)</li>
-      <li>IaaS / PaaS administration (AWS)</li>
-      <li>Continuous integration configuration</li>
-      <li>Build configuration (sbt, Maven, npm)</li>
-      <li>Writing tests: "Test first", TDD, BDD</li>
-    </ul>
-
-    <h2><span>GET IN TOUCH</span></h2>
-    <p>You can write to me with <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
-
-  </section>
-
-
-  <section id="fr">
+  <section>
     <h2><span>OBJECTIF</span></h2>
 
     <p>Je développe des applications depuis plus de dix ans. J’aime trouver des solutions techniques pragmatiques et 
@@ -191,56 +115,28 @@
       Je suis intervenu dans la conception des fonctionnalités et l’organisation des tâches d’une équipe organisée en Scrum avec le fondateur de l’entreprise. 
     </p>
 
-    <h3>Neuresys (ESN, 2014 à 2015)</h3>
-    <ul>
-      <li>Pour le client PMU : maintenance corrective et aux évolutions du backend de <a
-          href="https://www.pmu.fr/">www.pmu.fr</a>.</li>
-      <li>Pour le client CNP Assurances : développement d’une application de suivi de dossiers avec La Banque Postale.
-        Portage d'une application de gestion de contrats d’assurances-vie vers l’Intranet.</li>
-    </ul>
-
-    <h2><span>CONNAISSANCES TECHNIQUES</span></h2>
-
-    <p>Je suis titulaire d'un Master en Informatique de l'IUP de Brest, obtenu en 2007.</p>
+    <h2><span>COMPÉTENCES</span></h2>
 
     Je suis autonome avec&nbsp;:
     <ul>
-      <li>la conception et réalisation d'API REST/backend/batchs (Spring Boot (Java/bash/SQL), Symfony (PHP), Play framework (Scala))</li>
+      <li>la conception et réalisation d'API/backend/batchs (Spring Boot (Java/bash/SQL), Symfony (PHP)</li>
       <li>des bases de données (PostgreSQL)</li>
-      <li>un terminal (AiX, Linux, MacOS, Windows)</li>
-      <li>différents IDE (Suite Jetbrains, XCode)</li>
+      <li>un terminal (AiX, Linux, Windows)</li>
+      <li>différents IDE (Suite Jetbrains)</li>
     </ul>
 
 
     Au sein d’une équipe, je peux participer dans&nbsp;:
     <ul>
-      <li>le développement web (Vue.js, Angular (TypeScript/JavaScript/HTML/CSS))</li>
-      <li>le développement mobile natif (iOS (Objective C, Swift), Android (Java/Kotlin))</li>
-      <li>la configuration des outils de build et d’intégration continue (GitLab, Jenkins, Maven, NPM...)</li>
+      <li>le développement web (Vue.js (TypeScript/JavaScript/HTML/CSS))</li>
       <li>l’écriture de tests, en "Test first", TDD, BDD</li>
+      <li>l’animation et l’organisation des tâches</li>
+      <li>l’interaction avec différents acteurs, techniques, métier </li>
     </ul>
 
     <h2><span>CONTACT</span></h2>
     <p>Vous pouvez me joindre sur <a href="https://www.linkedin.com/in/gael-mercier">LinkedIn</a>.</p>
   </section>
   
-  <script>
-    function initLang() {
-      if (/^fr\b/.test(navigator.language)) {
-        showFr();
-      } else {
-        showEn();
-      }
-    }
-    function showFr() {
-      document.querySelector("#fr").style.display = "block";
-      document.querySelector("#en").style.display = "none";
-
-    }
-    function showEn() {
-      document.querySelector("#en").style.display = "block";
-      document.querySelector("#fr").style.display = "none";
-    }
-  </script>
 </body>
 </html>
